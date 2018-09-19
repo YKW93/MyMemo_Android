@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_signup"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/login_background"
+    tools:context="com.bignerdranch.android.memoserviceapp.SignupActivity">
+
+    <android.support.design.widget.TextInputLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <EditText
+        android:id="@+id/signupActivity_editText_email"
+        android:hint="이메일"
+        android:inputType="textEmailAddress"
+        android:background="@android:color/transparent"
+        android:drawableLeft="@drawable/ic_email_black_24dp"
+        android:drawablePadding="7dp"
+        android:layout_width="match_parent"
+        android:padding="8dp"
+        android:textColorHint="#000"
+        android:maxLines="1"
+        android:layout_height="wrap_content"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/signupActivity_editText_password"
+            android:hint="password"
+            android:inputType="textPassword"
+            android:background="@android:color/transparent"
+            android:drawablePadding="7dp"
+            android:padding="8dp"
+            android:textColorHint="#000"
+            android:maxLines="1"
+            android:drawableLeft="@drawable/ic_lock_black_24dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/signupActivity_editText_name"
+            android:hint="이름"
+            android:privateImeOptions="defaultInputmode=korean"
+            android:background="@android:color/transparent"
+            android:drawablePadding="7dp"
+            android:padding="8dp"
+            android:textColorHint="#000"
+            android:maxLines="1"
+            android:drawableLeft="@drawable/ic_assignment_ind_black_24dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </android.support.design.widget.TextInputLayout>
+    <Button
+        android:id="@+id/signupActivity_Button_signup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/signup_background"
+        android:layout_marginTop="20dp"
+        style="@style/Base.TextAppearance.AppCompat.Body1"
+        android:padding="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        android:text="회원가입"/>
+</LinearLayout>
